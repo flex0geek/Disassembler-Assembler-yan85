@@ -1,0 +1,11 @@
+ADD b c
+IMM b 0x41
+IMM a 0x41
+STK a 0
+STK 0 a
+STM *c a
+LDM c *a
+CMP c a
+JMP L a
+SYS 0x10 a
+SYS 0x10 b
