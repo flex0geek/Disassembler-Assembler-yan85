@@ -20,7 +20,6 @@ Yan85 has 3 bytes `op, arg1, arg2`
 
 ### Instructions
 ------
-
 | Register        | Descriptio |  Example |
 | ------------- |:-------------:|:-------------:|
 | imm | Moves a byte to a register | imm a 0x41|
