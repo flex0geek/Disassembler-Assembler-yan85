@@ -1,8 +1,8 @@
 # Simple Disassembler & Assembler for Yan85
 
-This is a simple disassemlber / assember for yan85 could be used in pwn.college challenges, the scripts are not perfect.
+This is a simple disassembler/assembler for yan85 that could be used in pwn.college challenges, the scripts are not perfect.
 
-Yan85 have 3 bytes `op, arg1, arg2`
+Yan85 has 3 bytes `op, arg1, arg2`
 
 ### Registers
 ------
@@ -26,11 +26,11 @@ Yan85 have 3 bytes `op, arg1, arg2`
 | imm | Moves a byte to a register | imm a 0x41|
 | add | Adds two registers      | add a b|
 | stk | Stack instruction deals with push and pop      | stk a 0 (pop)|
-| stm | Mobes a byte value from src register to memory location     | stm *c a|
-| ldm | Moves a byte value from the memory location to register      | ldm c *a|
+| stm | Set a memory value in a register     | stm *c a|
+| ldm | Load value of memory into a register      | ldm c *a|
 | cmp | Compares two registers      | cmp a b|
-| jmp | Jmp instruction      | jmp L a|
-| sys | call syscalls      | sys 0x10 a|
+| jmp | Jump instruction      | jmp 0x10 a|
+| sys | Execute syscalls      | sys 0x10 a|
 
 - stk
   - to push `arg1=0`      `arg2=reg`
@@ -49,3 +49,5 @@ Yan85 have 3 bytes `op, arg1, arg2`
 | sleep | Delay for seconds       |
 | exit | terminate the function currently running      |
 
+---
+For more details you can read this [Manual](https://drive.google.com/file/d/130mxJwJnfohfW0NYKD9z5xxu5LloPEZU/view)
